@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="950.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox layoutX="764.0" layoutY="22.0" prefHeight="44.0" prefWidth="138.0">
+         <children>
+            <Button blendMode="MULTIPLY" mnemonicParsing="false" style="-fx-background-color: #3370ff; -fx-text-fill: white; -fx-border-width: 1px 0px 3px 0px; -fx-text-fill: white; -fx-font-weight: bolder; -fx-background-radius: 5;" text="DELETE" textFill="#3370ff">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin></Button>
+            <Button blendMode="DARKEN" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #3370ff; -fx-text-fill: white; -fx-border-width: 1px 0px 3px 0px; -fx-text-fill: white; -fx-font-weight: bolder; -fx-background-radius: 5;" text="EXIT" textFill="#3370ff">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+      <Label blendMode="LIGHTEN" layoutX="39.0" layoutY="70.0" prefHeight="60.0" prefWidth="175.0" style="-fx-font-family: Quick sand; -fx-font-size: 30; -fx-font-weight: bolder; -fx-alignment: center; -fx-background-color: white; -fx-background-radius: 5;" text="To-Do List" />
+      <Line endX="54.0" endY="6.000007629394531" layoutX="180.0" layoutY="146.0" scaleY="3.0" startX="-161.0" startY="6.0" stroke="#0d0d0de0" />
+      <Pane layoutX="280.0" layoutY="70.0" prefHeight="492.0" prefWidth="598.0" style="-fx-background-color: white; -fx-border-width: 3px 3px 3px 3px; -fx-border-color: #3370ff; -fx-background-radius: 10; -fx-border-radius: 10;">
+         <children>
+            <Text layoutX="28.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.8em; -fx-font-weight: bolder; -fx-fill: blue;" text="My Day" wrappingWidth="240.99997866153717" />
+            <TextField layoutX="21.0" layoutY="49.0" prefHeight="25.0" prefWidth="138.0" style="-fx-background-color: transparent; -fx-alignment: left;" text="Friday, Februaury 21" />
+            <CheckBox layoutX="36.0" layoutY="97.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="123.0" style="-fx-font-size: 1.5em;" text="Read Book" />
+            <Separator layoutX="10.0" layoutY="135.0" prefHeight="15.0" prefWidth="584.0" />
+            <TextField layoutX="159.0" layoutY="99.0" prefHeight="9.0" prefWidth="123.0" style="-fx-background-color: transparent; -fx-font-size: 0.9em;" text="5:00 PM" />
+            <CheckBox layoutX="36.0" layoutY="150.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="214.0" style="-fx-font-size: 1.5em;" text="Implement To-Do List" />
+            <Separator layoutX="11.0" layoutY="187.0" prefHeight="15.0" prefWidth="584.0" />
+            <TextField layoutX="243.0" layoutY="152.0" prefHeight="9.0" prefWidth="123.0" style="-fx-background-color: transparent; -fx-font-size: 0.9em;" text="11:00 AM" />
+            <CheckBox layoutX="36.0" layoutY="203.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="315.0" style="-fx-font-size: 1.5em;" text="Read Object Oriented Porgramming" />
+            <TextField layoutX="351.0" layoutY="204.0" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: transparent; -fx-font-size: 0.9em;" text="11:00 AM" />
+            <Separator layoutX="10.0" layoutY="240.0" prefHeight="15.0" prefWidth="584.0" />
+            <Separator layoutX="10.0" layoutY="344.0" prefHeight="15.0" prefWidth="584.0" />
+            <Separator layoutX="10.0" layoutY="292.0" prefHeight="15.0" prefWidth="584.0" />
+            <Separator layoutX="11.0" layoutY="398.0" prefHeight="3.0" prefWidth="584.0" />
+            <Separator layoutX="10.0" layoutY="448.0" prefHeight="9.0" prefWidth="584.0" />
+            <Button fx:id="hello" layoutX="41.0" layoutY="253.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="114.0" style="-fx-background-color: transparent; -fx-font-weight: bolder; -fx-font-size: 1.3em; -fx-border-width: 1; -fx-border-color: gray; -fx-border-radius: 10;" text="+ Add a Task" textFill="#000000a7" />
+         </children></Pane>
+      <ScrollPane blendMode="COLOR_BURN" layoutX="27.0" layoutY="199.0" prefHeight="332.0" prefWidth="234.0" style="-fx-background-color: transparent;">
+         <content>
+            <VBox cache="true" prefHeight="298.0" prefWidth="138.0">
+               <children>
+                  <Button fx:id="addProject" blendMode="LIGHTEN" mnemonicParsing="false" onAction="#addProjectHandler" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: white; -fx-font-size: 15; -fx-font-weight: bolder; -fx-alignment: center;" text="Add Project" textFill="#517bf2" />
+                  <Pane prefHeight="16.0" prefWidth="138.0" />
+                  <Button blendMode="LIGHTEN" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: white; -fx-font-size: 15; -fx-font-weight: bolder;" text="Today's Task" textFill="#517bf2" />
+                  <Pane layoutX="10.0" layoutY="43.0" prefHeight="15.0" prefWidth="138.0" />
+                  <Button blendMode="LIGHTEN" layoutX="10.0" layoutY="57.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: white; -fx-font-size: 15; -fx-font-weight: bolder;" text="Project 1" textFill="#517bf2" />
+                  <Pane layoutX="10.0" layoutY="85.0" prefHeight="16.0" prefWidth="138.0" />
+                  <Button blendMode="LIGHTEN" layoutX="10.0" layoutY="103.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: white; -fx-font-size: 15; -fx-font-weight: bolder;" text="Project 2" textFill="#517bf2" />
+                  <Pane layoutX="10.0" layoutY="125.0" prefHeight="15.0" prefWidth="138.0" />
+                  <Button blendMode="LIGHTEN" layoutX="10.0" layoutY="103.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: white; -fx-font-size: 15; -fx-font-weight: bolder;" text="Project 3" textFill="#517bf2" />
+                  <Pane layoutX="10.0" layoutY="167.0" prefHeight="17.0" prefWidth="138.0" />
+                  <Pane layoutX="10.0" layoutY="209.0" prefHeight="9.0" prefWidth="138.0" />
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
